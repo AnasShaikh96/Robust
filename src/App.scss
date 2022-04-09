@@ -1,0 +1,10 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+// core
+@import "./assets/sass/base/core";
+
+// components
+@import "./assets/sass/components/home";
+
+// Vendors
+@import './assets/sass/vendors/poppins.scss';
