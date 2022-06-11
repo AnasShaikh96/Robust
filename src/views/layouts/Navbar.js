@@ -6,7 +6,6 @@ export default function Navbar() {
     const [isNavDark, setIsNavDark] = useState(false) 
 
     window.onscroll = function () {
-        console.log()
         window.scrollY >= 55 ? setIsNavDark(true) : setIsNavDark(false);
     };
     return (
