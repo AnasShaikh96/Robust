@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../layouts/Navbar';
-import Towers from "../../assets/images/towers.jpg";
 
 export default function Home() {
     return (
