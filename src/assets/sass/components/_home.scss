@@ -22,18 +22,42 @@
 }
 
 .navbar.bg-dark {
-    background-color: transparent !important;
+    background-color: #000 !important;
     color: #fff;
+
     .container {
         .navbar-brand {
             color: #fff;
         }
-        .navbar-nav > .nav-item > .nav-link {
-            color:#ccc;
+
+        .navbar-nav>.nav-item>.nav-link {
+            color: #ccc;
             font-weight: 600;
-          
-        } 
-        .navbar-nav > .nav-item > .nav-link.active {
+
+        }
+
+        .navbar-nav>.nav-item>.nav-link.active {
+            color: #fff;
+        }
+    }
+}
+
+.navbar.bg-transparent {
+    background-color: transparent !important;
+    color: #fff;
+
+    .container {
+        .navbar-brand {
+            color: #fff;
+        }
+
+        .navbar-nav>.nav-item>.nav-link {
+            color: #ccc;
+            font-weight: 600;
+
+        }
+
+        .navbar-nav>.nav-item>.nav-link.active {
             color: #fff;
         }
     }

@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import 'bootstrap/dist/js/bootstrap.bundle'
 
 export default function Navbar() {
+
+    const [isNavDark, setIsNavDark] = useState(false) 
+
+    window.onscroll = function () {
+        console.log()
+        window.scrollY >= 55 ? setIsNavDark(true) : setIsNavDark(false);
+    };
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-dark fixed-top">
+            <nav className={isNavDark ? "navbar navbar-expand-lg fixed-top bg-dark " : "navbar navbar-expand-lg fixed-top bg-transparent "} >
                 <div className="container">
                     <a className="navbar-brand" href="/">Robust</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,14 +1,21 @@
-import Home from "./views/pages/Home";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss"
+import Loader from "./views/layouts/Loader";
+
+const Home = lazy(() => import('./views/pages/Home'));
+
+
 
 function App() {
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home /> } />
+      <Suspense fallback={<div><Loader /></div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-    </Routes>
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 }
