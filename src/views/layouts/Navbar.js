@@ -1,20 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import 'bootstrap/dist/js/bootstrap.bundle'
 import Logo from "../..//assets/images/robust.png"
 
 export default function Navbar() {
 
-    const [isNavDark, setIsNavDark] = useState(true) 
-
-    window.onscroll = function () {
-        // window.scrollY >= 55 ? setIsNavDark(true) : setIsNavDark(false);
-    };
     return (
         <>
-            <nav className={isNavDark ? "navbar navbar-expand-lg fixed-top bg-dark " : "navbar navbar-expand-lg fixed-top bg-transparent "} >
+            <nav className="navbar navbar-expand-lg fixed-top bg-dark " >
                 <div className="container">
                     <a className="navbar-brand" href="/">
-                        <img src={Logo} alt="logo" width={100}  />
+                        <img src={Logo} alt="logo" width={100} />
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="fa fa-bars text-light"></span>
@@ -25,7 +20,7 @@ export default function Navbar() {
                                 <a className="nav-link active" aria-current="page" href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Who are we?</a>
+                                <a className="nav-link" href="#aboutUs">About Us</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/">What do we do?</a>

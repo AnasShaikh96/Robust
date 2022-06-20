@@ -4,12 +4,12 @@ import Construction from "../../assets/images/construction-min.jpg"
 export default function About() {
     return (
         <>
-            <div className='container'>
+            <div className='container' id='aboutUs'>
                 <h2 className='my-5 fw-bold'>
                     About Us
                 </h2>
                 <div className="row">
-                    <div className="col-lg-7">
+                    <div className="col-lg-7 order-lg-1 order-2 mt-lg-0 mt-4">
                         <p>
                             We, RRCES is a Mumbai based company that owns a group of passionate Engineers and 3D visualizers with over a decade worth of experience on Repairs and Maintenance work. <br />
                             Our team brings their technical knowledge, experience, and resourcefulness to the delivery of our construction .<br /> <br />
@@ -21,7 +21,7 @@ export default function About() {
                             We remain true to our founding values of quality, honesty and hard work.
                         </p>
                     </div>
-                    <div className="col-lg-5">
+                    <div className="col-lg-5 order-lg-2 order-1">
                         <img src={Construction} alt="..." className='w-100' />
                     </div>
                 </div>
