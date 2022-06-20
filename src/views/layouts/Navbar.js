@@ -23,7 +23,7 @@ export default function Navbar() {
                                 <a className="nav-link" href="#aboutUs">About Us</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">What do we do?</a>
+                                <a className="nav-link" href="#wwd">What do we do?</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link disabled" href='/'>Disabled</a>

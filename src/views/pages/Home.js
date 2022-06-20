@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../layouts/Navbar';
 import About from './About';
+import WeDo from './WeDo';
 
 export default function Home() {
 
@@ -14,6 +15,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <WeDo />
             <About />
 
 
