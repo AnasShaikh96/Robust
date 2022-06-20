@@ -1,5 +1,5 @@
 .hero-wrapper {
-    background-image: url(../../images/towers.jpg);
+    // background-image: url(../../images/towers.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,7 +8,7 @@
     width: 100%;
     z-index: -1;
     position: relative;
-    height: 100vh;
+    height: 70px;
 
     &::after {
         content: "";
@@ -17,12 +17,12 @@
         right: 0;
         top: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 35%);
+        // background: rgba(0, 0, 0, 35%);
     }
 }
 
 .navbar.bg-dark {
-    background-color: #000 !important;
+    background-color: #032A61 !important;
     color: #fff;
 
     .container {
