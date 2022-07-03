@@ -6,7 +6,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg fixed-top bg-dark " >
+            <nav className="navbar navbar-expand-lg bg-dark " >
                 <div className="container">
                     <a className="navbar-brand" href="/">
                         <img src={Logo} alt="logo" width={100} />

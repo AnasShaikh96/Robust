@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from '../layouts/Navbar';
 import About from './About';
+import Contact from './Contact';
+import HeroSection from './HeroSection';
 import WeDo from './WeDo';
 
 export default function Home() {
@@ -8,18 +10,12 @@ export default function Home() {
     return (
         <>
             <Navbar />
-            <div className='hero-wrapper'>
-                <div className="container">
-                    <div className='hero-title'>
-                        something
-                    </div>
-                </div>
-            </div>
+            <HeroSection />
             <WeDo />
             <About />
 
 
-            {/* <Contact /> */}
+            <Contact />
         </>
     )
 }

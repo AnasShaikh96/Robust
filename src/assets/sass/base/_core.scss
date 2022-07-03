@@ -48,3 +48,11 @@ body {
         height: 70px;
     }
 }
+
+
+.slick-arrow {
+    &::before {
+        color: #032A61;
+
+    }
+}

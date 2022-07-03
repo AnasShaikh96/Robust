@@ -2,4 +2,21 @@
     background-color: #032A61;
     color: #fff;
 
+
+    .form-control {
+        background-color: #032A61;
+        border-color: #999;
+        caret-color: #fff;
+        &:focus {
+            border-color: #fff;
+        }
+
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
 }
